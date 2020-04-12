@@ -253,8 +253,10 @@ figure img {
 /* MAIN MOVIES CONTAINER */
 
 .catalogo-filmes-lista {
-	width: 67%;
-	margin: 25px auto;
+	width: 70%;
+	max-width: 960px;
+	margin: 0px auto; /*To DO*/
+	padding: 30px 0; /*To DO*/
 }
 
 @supports(display:grid){
@@ -365,6 +367,33 @@ figure img {
 	color: red;
 }
 
+/* Footer */
+
+.rodape {
+	width: 100vw;
+	padding:30px 0 25px 0;
+}
+
+.rodape .container {
+	width: 70%;
+	height: 100%;
+	max-width: 940px;
+	margin: 0 auto;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.rodape-lista {
+	display: flex;
+	font-size: 2.5rem;
+}
+
+.rodape-lista-item i{
+	margin-left: 40px;
+	color: #ccc;
+}
 /* MEDIA QUERIES */
 
 @media  (max-width:1050px) {
