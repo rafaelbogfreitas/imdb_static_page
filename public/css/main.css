@@ -126,7 +126,7 @@ figure img {
 .hero-usuario-nome {
 	font-size: 1.3rem;
 	font-weight: bold;
-	margin-left: 15px; /*To Do*/
+	margin-left: 15px;
 }
 
 /* NAV CONTAINER END */
@@ -140,12 +140,12 @@ figure img {
 }
 
 .hero-conteudo .container {
-	width: 100%;	/*To Do*/
-	height: 93%;	/*To Do*/
+	width: 100%;
+	height: auto;
 
 	display: flex;
 	flex-direction: column;
-	justify-content: center;/*To Do*/
+	justify-content: center;
 	align-items:flex-start;
 
 	position: relative;
@@ -212,6 +212,8 @@ figure img {
 	width: 70%;
 	max-width: 960px;
 	height: 70px;
+	position: relative;
+	z-index: 20;
 	margin: 0 auto;
 	
 	display:flex;
@@ -251,7 +253,7 @@ figure img {
 /* MAIN MOVIES CONTAINER */
 
 .catalogo-filmes-lista {
-	width: 70%;
+	width: 67%;
 	margin: 25px auto;
 }
 
@@ -261,8 +263,8 @@ figure img {
 		-ms-display: grid;
 		grid-template-columns: repeat(4, 1fr);
 		-ms-grid-template-columns: repeat(4, 1fr);
-		grid-gap: 15px;
-		-ms-grid-gap: 15px;
+		grid-gap: 13px;
+		-ms-grid-gap: 13px;
 	}
 }
 
@@ -311,7 +313,57 @@ figure img {
 	transition: color 0.2s linear;
 }
 
+/* Card */
 
+.catalogo-filmes-lista-item {
+	margin-bottom: 20px;
+	border-radius: 10px;
+	box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.214);
+	overflow: hidden;
+}
+
+.filme-sinopse {
+	height: 100%;
+	background-color: #fff;
+}
+
+.filme-sinopse-titulo {
+	padding: 10px;
+	text-transform: uppercase;
+	font-size: 1.3rem;
+}
+
+.sinopse-genero {
+	padding-left: 10px;
+}
+
+.sinopse-genero a {
+	color: var(--main-yellow);
+	font-size: 1.2rem;
+}
+
+.sinopse-genero a:hover {
+	text-decoration: underline;
+}
+
+.filme-nota {
+	font-size: 2rem;
+	font-weight: bold;
+
+	margin: 10px;
+
+	display: flex;
+	justify-content: space-between;
+}
+
+.filme-nota i {
+	color: #ccc;
+}
+
+.filme-nota i:hover {
+	cursor: pointer;
+	color: red;
+}
 
 /* MEDIA QUERIES */
 
