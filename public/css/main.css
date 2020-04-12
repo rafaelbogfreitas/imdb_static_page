@@ -394,6 +394,7 @@ figure img {
 	margin-left: 40px;
 	color: #ccc;
 }
+
 /* MEDIA QUERIES */
 
 @media  (max-width:1050px) {
@@ -442,4 +443,28 @@ figure img {
 		height: 30px;
 	}
 
+}
+
+/* to DO */
+
+@media (max-width:500px){
+	.hero-titulo{
+		font-size: 5rem;
+	}
+
+	.hero-usuario-nome {
+		display: none;
+	}
+
+	.rodape-imagem {
+		display: none;
+	}
+
+	.rodape .container {
+		justify-content: center;
+	}
+
+	.rodape-lista {
+		width: 100%;
+	}
 }
