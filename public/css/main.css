@@ -134,8 +134,8 @@ figure img {
 /* HERO CONTEUDO */
 .hero-conteudo {
 	width: 70%;
-	height: 100%;
 	max-width: 960px;
+	height: 100%;
 	margin: 0 auto;
 }
 
@@ -157,7 +157,7 @@ figure img {
 }
 
 .hero-titulo {
-	margin-top: 100px;
+	margin-top: 200px;
 	font-size: 6.5rem;
 	text-transform: uppercase;
 }
@@ -199,6 +199,15 @@ figure img {
 .hero-botao:hover {
 	filter: opacity(0.8);
 	transition: filter 0.2s linear;
+}
+
+.hero-informacao {
+	font-size: 1.4rem;
+}
+
+.hero-informacao p + p {
+	color: var(--main-yellow);
+	margin-top: 15px;
 }
 
 /* MOVIES HEADER */
@@ -331,6 +340,7 @@ figure img {
 
 .filme-sinopse-titulo {
 	padding: 10px;
+	/* margin: 10px; */
 	text-transform: uppercase;
 	font-size: 1.3rem;
 }
@@ -352,7 +362,7 @@ figure img {
 	font-size: 2rem;
 	font-weight: bold;
 
-	margin: 10px;
+	padding: 10px;
 
 	display: flex;
 	justify-content: space-between;
@@ -376,8 +386,8 @@ figure img {
 
 .rodape .container {
 	width: 70%;
-	height: 100%;
 	max-width: 940px;
+	height: 100%;
 	margin: 0 auto;
 
 	display: flex;
@@ -390,9 +400,19 @@ figure img {
 	font-size: 2.5rem;
 }
 
-.rodape-lista-item i{
+.rodape-lista-item i {
 	margin-left: 40px;
 	color: #ccc;
+}
+
+.rodape-lista-item:nth-child(1) i:hover{
+	color:#49aae0;
+}
+.rodape-lista-item:nth-child(2) i:hover{
+	color:#3b5998;
+}
+.rodape-lista-item:nth-child(3) i:hover{
+	color:#ed7670;
 }
 
 /* MEDIA QUERIES */
@@ -415,7 +435,7 @@ figure img {
 }
 
 
-@media screen and (max-width:850px) {
+@media (max-width:850px) {
 	html {
 		font-size: 9px;
 	}
@@ -426,7 +446,7 @@ figure img {
 }
 
 
-@media screen and (max-width:550px) {
+@media (max-width:550px) {
 	html {
 		font-size: 8px;
 	}
